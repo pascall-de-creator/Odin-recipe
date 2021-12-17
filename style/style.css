@@ -1,0 +1,126 @@
+*{
+    transition: 0.1s;
+    font-family: Arial, sans-serif;
+}
+body{
+    margin: 0;
+    height: 100%;
+}
+a{
+    color: grey;
+    text-decoration: none;
+    font-weight: 500;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+a:hover{
+    color: rgb(255, 174, 0);
+}
+#start{
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 6px;
+}
+.item_desc{
+    width: 70%;
+}
+.recipe_name{
+    font-style: oblique;
+    font-size: large;
+    margin-bottom: 5px;
+}
+.recipe_desc{
+    margin-top: 10px;
+    color: grey;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+#banner{
+    background-image: url("../images/food1.jpg");
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+}
+#cover{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.336);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+#resps{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    width: 200px;
+    height: 280px;
+    background-color: rgb(226, 226, 226);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+.card_img{
+    height: 200px;
+    width: 90%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 6px;
+}
+#recipe_img1{
+    background-image: url("../images/thumbnail1.png");
+}
+#recipe_img2{
+    background-image: url("../images/thumbnail2.jpg");
+}
+#recipe_img3{
+    background-image: url("../images/thumbnail3.jpg");
+}
+#recipe_img4{
+    background-image: url("../images/thumbnail4.jfif");
+}
+#recipe_img5{
+    background-image: url("../images/thumbnail5.JPG");
+}
+#recipe_img6{
+    background-image: url("../images/thumbnail6.jfif");
+}
+footer{
+    height: 40px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+footer p{
+    color: white;
+}
+
+@media (max-width: 480px) {
+    .card{
+        width: 140px;
+        height: 230px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

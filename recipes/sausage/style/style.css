@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    transition: 0.1s;
+    font-family: poppins;
+}
+p{
+    font-weight: 600;
+    color: black;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(68, 68, 68); 
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b6b6b6; 
+}
+
+body{
+    margin: 0;
+    height: 100%;
+}
+a{
+    color: grey;
+    text-decoration: none;
+    font-weight: 500;
+}
+a:hover{
+    color: rgb(255, 174, 0);
+}
+#body{
+    display: flex;
+}
+#thingy{
+    width: 95%;
+    display: flex;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    min-height: 250px;
+}
+H1{
+    margin-left: 10px;
+}
+.ingredients-section__fieldset{
+    width: 50%;
+    border-radius: 6px;
+    height: 250px;
+}
+#how-to{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+#image{
+    width: 90%;
+    height: 450px;
+    background-size: cover;
+    border-radius: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+    background-image: url("../images/img1.JPG");
+}
+#list{
+    width: 30%;
+    margin-right: 20px;
+    margin-top: 5vh;
+    height: max-content;
+    overflow-y: scroll;
+    background-color: orange;
+    padding-left: 10px;
+    border-radius: 10px;
+    right: 10px;
+}
+.ing{
+    display: flex;
+    align-items: center;
+}
+input{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+#body{
+    display: flex;
+}
+#resp{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 90%;
+}
+footer{
+    height: 40px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+footer p{
+    color: white;
+}
+@media (max-width: 800px) {
+    #body{
+        flex-direction: column;
+    }
+    #body:nth-child(2){order: 1;}
+    #how-to{
+        width: 95%;
+    }
+    #list{
+        display: flex;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #list div{
+        margin-right: 20px;
+    }
+}
