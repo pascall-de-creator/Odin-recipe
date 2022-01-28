@@ -23,5 +23,3 @@ This is a project from [the odin project](https://www.theodinproject.com/).
 
 License
 MIT
-
-Free Software, Hell Yeah!
